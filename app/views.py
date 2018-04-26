@@ -18,6 +18,17 @@ def hello_world():
 def base():
     return render_template('base.html')
 
+
 @app.route('/events')
 def events():
+    return render_template('events.html')
+
+
+@app.route('/signup')
+def signup():
+    return render_template('events.html')
+
+
+@app.route('/login')
+def login():
     return render_template('events.html')
