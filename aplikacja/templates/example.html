@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <ul class="list-group">
+        {% for ex in example %}
+            <li class="list-group-item"><a href="example/{{ ex.id }}">{{ex.data}}</a></li>
+        {% endfor %}
+    </ul>
+
+{% endblock %}
