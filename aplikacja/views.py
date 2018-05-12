@@ -41,17 +41,21 @@ def articles():
     return render_template('articles.html',
                            articles=Articles)
 
+
 @app.route('/hello')
 def hello_world():
     return 'Hello World!'
+
 
 @app.route('/bibliography')
 def bibliography():
     return render_template('bibliography.html')
 
+
 @app.route('/base')
 def base():
     return render_template('base.html')
+
 
 @app.route('/events')
 def events():

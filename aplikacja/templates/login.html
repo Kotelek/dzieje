@@ -16,8 +16,8 @@ Login
         <h2 class="form-signin-heading">Zaloguj się</h2>
           Chyba, że nie masz jeszcze konta. W takim razie: <a href="{{ url_for('signup') }}"> Zarejestruj się</a>
         {{ form.hidden_tag() }}
-        <p>{{ form.username.label }}
-        {{ form.username }}</p>
+        <p>{{ form.login.label }}
+        {{ form.login }}</p>
         <p>{{ form.password.label }}
         {{ form.password }}</p>
         <p>{{ form.remember.label }}
