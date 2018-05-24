@@ -103,7 +103,9 @@ def signup():
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     form = LoginForm()
+
     if form.validate_on_submit():
+        '''
         user = User.query.filter_by(login=form.login.data).first()
         print(user)
 
@@ -116,7 +118,8 @@ def login():
                 return redirect(url_for('articles'))
 
         return '<h1>Invalid login or password</h1>'
-        #return '<h1>' + form.username.data + ' ' + form.password.data + '</h1>'
+        '''
+        return '<h1>' + form.login.data + ' ' + form.password.data + '</h1>'
 
     return render_template('login.html', form=form)
 

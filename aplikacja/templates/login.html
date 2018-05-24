@@ -16,11 +16,11 @@ Login
         <h2 class="form-signin-heading">Zaloguj się</h2>
           Chyba, że nie masz jeszcze konta. W takim razie: <a href="{{ url_for('signup') }}"> Zarejestruj się</a>
         {{ form.hidden_tag() }}
-        <p>{{ form.login.label }}
+        <p>{{ form.login.label }}<br>
         {{ form.login }}</p>
-        <p>{{ form.password.label }}
+        <p>{{ form.password.label }}<br>
         {{ form.password }}</p>
-        <p>{{ form.remember.label }}
+        <p>{{ form.remember.label }}<br>
         {{ form.remember }}</p>
         <button class="btn btn-lg btn-primary btn-block" type="submit">Potwierdź</button>
       </form>
